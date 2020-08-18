@@ -13,15 +13,6 @@ header {
   padding: 12px;
   box-shadow: 1px 1px 10px black;
 }
-.green_background {
-  background-color: green;
-}
-.red_background {
-  background-color: red;
-}
-.grey_background {
-  background-color: gray;
-}
 
 header h1 {
   color: white;
@@ -103,4 +94,28 @@ header h1 {
   font-size: 22px;
   font-weight: bold;
   margin-top: 22px;
+}
+.green_background {
+  background-color: green;
+}
+.green_background:hover {
+  background-color: green;
+  padding: 13px;
+  box-shadow: 2px 2px 10px green;
+}
+.red_background {
+  background-color: rgb(212, 14, 14);
+}
+.red_background:hover {
+  background-color: rgb(212, 14, 14);
+  padding: 13px;
+  box-shadow: 2px 2px 10px red;
+}
+.grey_background {
+  background-color: rgb(95, 92, 92);
+}
+.grey_background:hover {
+  background-color: rgb(95, 92, 92);
+  padding: 13px;
+  box-shadow: 2px 2px 10px rgb(95, 92, 92);
 }

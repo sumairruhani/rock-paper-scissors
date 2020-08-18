@@ -27,6 +27,16 @@ function win(userChoice, computerChoice) {
   result_p.innerHTML = `You chose ${convertToWord(
     userChoice
   )} which beats ${convertToWord(computerChoice)}, you win!`;
+  document.getElementById(userChoice).classList.add("green_background");
+  document.getElementById(userChoice).classList.add("green_background:hover");
+  setTimeout(function () {
+    document.getElementById(userChoice).classList.remove("green_background");
+  }, 1000);
+  setTimeout(function () {
+    document
+      .getElementById(userChoice)
+      .classList.remove("green_background:hover");
+  }, 1000);
 }
 function lose(userChoice, computerChoice) {
   computerScore++;
@@ -35,6 +45,16 @@ function lose(userChoice, computerChoice) {
   result_p.innerHTML = `You chose ${convertToWord(
     userChoice
   )} which loses to ${convertToWord(computerChoice)}, you lost!`;
+  document.getElementById(userChoice).classList.add("red_background");
+  document.getElementById(userChoice).classList.add("red_background:hover");
+  setTimeout(function () {
+    document.getElementById(userChoice).classList.remove("red_background");
+  }, 1000);
+  setTimeout(function () {
+    document
+      .getElementById(userChoice)
+      .classList.remove("red_background:hover");
+  }, 1000);
 }
 function draw(userChoice, computerChoice) {
   userScore_span.innerHTML = userScore;
@@ -42,6 +62,16 @@ function draw(userChoice, computerChoice) {
   result_p.innerHTML = `You chose ${convertToWord(
     userChoice
   )} and the PC chose ${convertToWord(computerChoice)}, so its a draw!`;
+  document.getElementById(userChoice).classList.add("grey_background");
+  document.getElementById(userChoice).classList.add("grey_background:hover");
+  setTimeout(function () {
+    document.getElementById(userChoice).classList.remove("grey_background");
+  }, 1000);
+  setTimeout(function () {
+    document
+      .getElementById(userChoice)
+      .classList.remove("grey_background:hover");
+  }, 1000);
 }
 
 function game(userChoice) {
