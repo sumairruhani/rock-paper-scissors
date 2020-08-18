@@ -26,7 +26,7 @@ function win(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   result_p.innerHTML = `You chose ${convertToWord(
     userChoice
-  )} which beats ${convertToWord(computerChoice)}, you win!`;
+  )} and the PC chose ${convertToWord(computerChoice)}, you win!`;
   document.getElementById(userChoice).classList.add("green_background");
   document.getElementById(userChoice).classList.add("green_background:hover");
   setTimeout(function () {
@@ -44,7 +44,7 @@ function lose(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   result_p.innerHTML = `You chose ${convertToWord(
     userChoice
-  )} which loses to ${convertToWord(computerChoice)}, you lost!`;
+  )} and the PC chose ${convertToWord(computerChoice)}, you lose!`;
   document.getElementById(userChoice).classList.add("red_background");
   document.getElementById(userChoice).classList.add("red_background:hover");
   setTimeout(function () {
